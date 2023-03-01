@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devise-width, initial-scale=1.0">
+    <meta httr-enquiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'main/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+    <title>SleepHight</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="/">
+                        <img src="{% static 'main/images/SH.svg' %}">
+                        <img src="{% static 'main/images/SleepHight.svg' %}" alt="logo">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">About</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Sign in</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Sign up</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    {% block main %}
+    {% block static %}
+    {% endblock %}
+    {% endblock %}
+
+</body>
+<html>
